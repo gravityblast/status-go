@@ -1,6 +1,7 @@
 package whisper
 
 import (
+	"runtime"
 	"testing"
 	"time"
 
@@ -64,6 +65,8 @@ func (s *WhisperJailTestSuite) TestJailWhisper() {
 	defer s.StopTestBackend()
 
 	r := s.Require()
+
+	runtime.GOMAXPROCS(3)
 
 	keyPairID1, err := s.AddKeyPair(TestConfig.Account1.Address, TestConfig.Account1.Password)
 	r.NoError(err)
