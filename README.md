@@ -7,6 +7,7 @@
 
 - [How To Build](https://wiki.status.im/Building_status-go)
 - [Notes on Bindings](https://wiki.status.im/Status-go_Binding_notes)
+- [Status-go docs](https://www.notion.so/status/status-go-4fbe361e8e75484abeadadc80dd4dcdc)
 
 # Intro
 
